@@ -152,7 +152,6 @@ export default {
         hljs.configure({
           languages: [language],
         });
-        console.log(hljs);
       },
       immediate: true,
     },

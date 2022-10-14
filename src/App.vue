@@ -9,7 +9,7 @@
       :render-nothing-when-empty="renderNothingWhenEmpty"
       :diff-style="diffStyle"
       :file-name="fileName"
-      :language="'javascript'"
+      :language="'json'"
       :is-show-no-change="isShowNoChange"
       :theme="theme"
     />
