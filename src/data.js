@@ -1,3 +1,4 @@
+// 测试数据
 export const A = `package psafe
 
 import (

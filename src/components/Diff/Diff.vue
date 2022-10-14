@@ -9,7 +9,6 @@
 
 <script>
 import pageMap from "./pagemap";
-
 import { createPatch } from "diff";
 import * as Diff2Html from "diff2html";
 import hljs from "highlight.js";
@@ -144,7 +143,7 @@ export default {
       );
     },
     classes() {
-      return [this.theme, this.extCls, `format-${this.format}`];
+      return [this.theme, this.extCls, `format-${this.outputFormat}`];
     },
   },
   watch: {
