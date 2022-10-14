@@ -4,20 +4,10 @@
 ```vue
 <template>
   <div>
-    <code-diff :old-string="oldStr" :new-string="newStr" :context="10" />
+    <vue-diff :old-string="oldStr" :new-string="newStr" :context="10" />
   </div>
 </template>
 
-import CodeDiff from 'vue-code-diff'
-export default {
-  components: {CodeDiff},
-  data(){
-    return {
-      oldStr: 'old code',
-      newStr: 'new code'
-    }
-  }
-}
 ```
 
 ## 参数说明
@@ -33,8 +23,8 @@ export default {
 | diffStyle | 每行中对比差异级别 | string | word, char | word |
 | fileName | 文件名 | string | - |  |
 | isShowNoChange | 当无对比时展示源代码 | boolean | - | false |
-| language | 语言 | String | - | javascript |
-| language | 主题 | String | - | light |  dark |
+| language | 语言 | String | 主流大部分语言 | javascript |
+| language | 主题 | String | light,dark- | light |
 | extCls |  外部设置的 class name | String | - | '' |
 
 ## 效果展示
