@@ -1,7 +1,5 @@
 <template>
-  <div id="app" style="width: 1000px">
-    <button @click="getTheme">暗黑</button>
-    <button @click="getFormat">分栏</button>
+  <div id="app">
     <vue-diff
       :old-string="oldStr"
       :new-string="newStr"
@@ -17,7 +15,6 @@
     />
   </div>
 </template>
-
 <script>
 import vueDiff from "./components/Diff/Diff.vue";
 import { A, B } from "./data";
@@ -40,17 +37,7 @@ export default {
       renderNothingWhenEmpty: false,
     };
   },
-  methods: {
-    getTheme() {
-      this.theme = this.theme === "dark" ? "light" : "dark";
-    },
-    getFormat() {
-      this.format =
-        this.format === "line-by-line" ? "side-by-side" : "line-by-line";
-    },
-  },
+  methods: {},
   computed: {},
 };
 </script>
-
-<style lang="scss"></style>

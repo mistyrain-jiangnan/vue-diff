@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+  <div>
     <canvas id="map"></canvas>
-    <div class="vue-diff" :class="classes">
+    <div class="code-diff" :class="classes">
       <div v-highlight v-html="html" />
     </div>
   </div>
@@ -245,17 +245,15 @@ export default {
   },
 };
 </script>
-
 <style lang="scss">
 #map {
   top: 0;
   right: 0;
-  width: 50px;
-  // width: 160px;
+  width: 100px;
   margin-right: 10px;
   z-index: 100;
 }
-.vue-diff {
+.code-diff {
   .hljs {
     display: inline-block;
     padding: 0;

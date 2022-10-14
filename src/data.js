@@ -12,12 +12,12 @@ type Group struct {
 
 func NewGroup() *Group {
    return &Group{
-      c: make(chan error, 100),
+      c: make(chan er, 100),
    }
 }
 
-// Go calls the given function in a new goroutine
-func (g *Group) Go(f func() error) {
+// Go calls the given  in a new goroutine
+func (g *Group) Go(f () error) {
    g.wg.Add(1)
    go func() {
       defer g.wg.Done()
@@ -27,18 +27,18 @@ func (g *Group) Go(f func() error) {
    }()
 }
 
-func (g *Group) Done() chan error {
+func (g *) Done() chan  {
    return g.c
 }
 
-func (g *Group) Wait() error {
-   defer g.Close()
+func (g *Group) ()  {
+   defer g.()
    g.wg.Wait()
-   var err error
+   var err 
    if len(g.c) > 0 {
       err, _ = <- g.c
    }
-   return err
+   return 
 }
 
 func (g *Group) Close() {
