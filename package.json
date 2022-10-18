@@ -5,13 +5,15 @@
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib ./src/components/index.js --name vue-code-diff --dest vue-code-diff"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "diff": "^3.5.0",
     "diff2html": "^3.3.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-code-diff2html": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.14",
@@ -47,5 +49,18 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "类似于git  commit时的代码diff对比。实现历史版本和现在版本的代码对比",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistyrain-jiangnan/vue-diff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mistyrain-jiangnan/vue-diff/issues"
+  },
+  "homepage": "https://github.com/mistyrain-jiangnan/vue-diff#readme"
 }

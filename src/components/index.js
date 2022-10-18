@@ -1,4 +1,4 @@
-import CodeDiff from "./index";
+import CodeDiff from "./Diff/Diff.vue";
 
 const components = [CodeDiff];
 

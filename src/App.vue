@@ -16,12 +16,12 @@
   </div>
 </template>
 <script>
-import vueDiff from "./components/Diff/Diff.vue";
+import VueDiff from "vue-code-map-diff";
 import { A, B } from "./data";
 export default {
   name: "App",
   components: {
-    vueDiff,
+    VueDiff,
   },
   data() {
     return {
